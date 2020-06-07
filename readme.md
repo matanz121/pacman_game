@@ -18,7 +18,9 @@
 
 9) You can restart the game any time you want.
 
-10) Good luck. Have fun.
+10) GitHub link to this project - https://github.com/matanz121/pacman_game
+
+11) Good luck. Have fun.
 
 BONUS - We added Monster & Walls. Monster will take you 1 point from you life. Walls will not give you the option to move to the walls position.
 -----------------------------------------------------------------------------------------------------------------------------------------------
