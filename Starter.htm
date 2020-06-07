@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<HEAD>
+    <link rel="stylesheet" type="text/css" href="pacman.css" />
+    <title> Pacman game - Netanel Abutbul </title>
+</HEAD>
+
+<body>
+    <div id="pacGame">
+        <h1 id="gametitle">PACMAN GAME !</h1>
+        <div id="score">
+            <div class="inputs">
+                SCORE:
+                <input id="lblScore" type="text" disabled />
+            </div>
+            <div class="inputs">
+                TIME:
+                <input id="lblTime" type="text" disabled />
+            </div>
+            <div class="inputs">
+                LIFE:
+                <input id="lblLife" type="text" disabled />
+            </div>
+            <input id="restart" type="button" onclick="RestartTheGame()" value="Restart Game!">
+        </div>
+    </div>
+    <div id="endGame" style="display: none">
+        <h1 id="currentScore"></h1>
+        <h2 id="timeLeft"></h2>
+        <h3 id="highScore"></h3>
+        <h4 id="newHighScore" style="display: none"></h4>
+        <input id="restart" type="button" onclick="RestartTheGame()" value="Restart Game!">
+    </div>
+    <div id="pacmanBoard">
+        <canvas id="canvas" height="605" width="600"></canvas>
+    </div>
+
+    <img id="bomb" src="images/Bomb.png" style="display: none">
+    <img id="candy" src="images/Candy.png" style="display: none">
+    <img id="noEntry" src="images/NoEntry.png" style="display: none">
+    <img id="monster" src="images/Monster.png" style="display: none">
+</body>
+<audio id="eatCandyAudio" src="audio/pacman_eatfruit.mp3"></audio>
+<audio id="eatBallsAudio" src="audio/pacman_chomp.mp3"></audio>
+<audio id="eatBombAudio" src="audio/pacman_eatghost.mp3"></audio>
+<audio id="eatMonsterAudio" src="audio/pacman_intermission.mp3"></audio>
+<audio id="deathAudio" src="audio/pacman_death.mp3"></audio>
+<script type="text/javascript" src="pacman.js"></script>
+
+</html>
